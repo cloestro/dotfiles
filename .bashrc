@@ -123,7 +123,7 @@ if [ -f "/usr/share/powerline/bindings/bash/powerline.sh" ]; then
 	source /usr/share/powerline/bindings/bash/powerline.sh
 fi
 
-alias mygit='git --git-dir=/home/domi/.local/myconfig/ --work-tree=/home/domi'
+alias mygit='git --git-dir=$HOME/.local/myconfig/ --work-tree=$HOME'
 
 
 screenfetch
