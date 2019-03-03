@@ -116,17 +116,14 @@ if ! shopt -oq posix; then
   fi
 fi
 
-
-function _update_ps1() {
-	PS1="$(powerline $? 2> /dev/null)"
-}
-
-
 # added powerline
 PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
 
 if [ -f "/usr/share/powerline/bindings/bash/powerline.sh" ]; then
 	source /usr/share/powerline/bindings/bash/powerline.sh
 fi
+
+alias mygit='git --git-dir=/home/domi/.local/myconfig/ --work-tree=/home/domi'
+
+
 screenfetch
-alias myconfig='git --git-dir=/home/domi/.local/myconfig/ --work-tree=/home/domi'
